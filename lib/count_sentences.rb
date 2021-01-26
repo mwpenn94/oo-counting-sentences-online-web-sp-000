@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     sentence = []
-    sentence_finder = self.split (?:\.|\?|\!)(?= [^a-z]|$)
+    sentence_finder = self.split (/?:\.|\?|\!)(?= [^a-z]|$)
 		sentence_finder.each do |string|
 			 if string.size > 1
 				sentence << string
